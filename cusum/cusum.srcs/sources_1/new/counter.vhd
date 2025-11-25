@@ -16,7 +16,7 @@ begin
     process(clk, rst)
     begin
         if rst = '1' then
-            internal_count <= (others => '0');
+            internal_count <= "00000000001";
         else
             if rising_edge(clk) then
                 if en = '1' then
